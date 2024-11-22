@@ -1,14 +1,18 @@
+// Hero.js
 import React from 'react';
-import NavBar from './NavBar';
+import './HomePage.css';
+import { Link } from 'react-router-dom';
 
-const App = () => {
+const HomePage = () => {
     return (
-        <div>
-            <NavBar />
-            <h1>Home Page</h1>
-            <p>This Is The HomePage.</p>
-        </div>
+        <section className="hero">
+            <div className="hero-content">
+                <h1>Hi, I'm Donny</h1>
+                <p>Web Developer | Designer | Creator</p>
+                <Link to="/contact" className="cta-button">Let's Work Together</Link>
+            </div>
+        </section>
     );
-};
+}
 
-export default App;
+export default HomePage;

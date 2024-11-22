@@ -1,10 +1,19 @@
 body {
   margin: 0;
+  background: url('../public/stormy_landscape.jpeg') ;
+  background-size: cover;  /* Ensure the image covers the whole page */
+  background-position: center; /* Center the image */
+  background-attachment: fixed; 
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+body, html {
+  overflow: hidden; /* Disables scrolling */
+  height: 100%; /* Ensure the page takes the full height */
 }
 
 code {

@@ -1,13 +1,27 @@
-import React from 'react'
+import React from 'react';
+import './Skills.css';
 
 const Skills = () => {
-    return(
-        <section id="about">
-            <h1>Skills</h1>
-            <p>I Have Following Skills:
-            </p>
+    const skills = [
+        { name: 'JavaScript/ React' },
+        { name: 'PHP' },
+        { name: 'SCSS/Bootstrap' },
+        { name: 'MySQL' },
+        { name: 'Microsoft Office' },
+        { name: 'Deadline Adherence and Time Management' },
+    ];
+
+    return (
+        <section className="skills-section">
+            <div className="skills-container">
+                {skills.map((skill, index) => (
+                    <div className="skill-card" key={index}>
+                        <h3>{skill.name}</h3>
+                    </div>
+                ))}
+            </div>
         </section>
-    )
-}
+    );
+};
 
 export default Skills;

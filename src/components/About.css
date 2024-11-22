@@ -1,31 +1,49 @@
-/* Base styles */
 body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #03396c; /* Deep Ocean Blue */
-    color: #ffffff; /* white text */
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
+    color: #333333; /* Charcoal Gray */
+    line-height: 1.6;
+    overflow-x: hidden;
 }
+
+/* Section Animations */
+section {
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fade-slide-in 1s ease forwards;
+}
+
+@keyframes fade-slide-in {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 
 /* About Section */
 .about-section {
-    padding: 6rem 2rem;
-    background: #e7eff6; /* Light Ocean Blue */
+    padding: 5rem 2rem;
+    background: linear-gradient(to bottom, #d3d3d3, #c0c8c6); /* Soft Gray to Pale Sage */
     text-align: center;
-    position: relative;
-    overflow: hidden;
-    color: #03396c; /* Deep Ocean Blue text */
+    animation-delay: 0.5s;
+    min-width: 100vh;
 }
 
 .about-container {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     max-width: 1200px;
     margin: 0 auto;
     gap: 2rem;
-    color: #03396c; /* Deep Ocean Blue */
+    padding-bottom: 50px;
 }
 
 .about-text {
@@ -33,37 +51,68 @@ body {
     max-width: 550px;
     margin: 0 auto;
     text-align: left;
-    color: #03396c; /* Deep Ocean Blue text */
 }
 
 .about-text h1 {
     font-size: 2.5rem;
-    font-weight: bold;
-    color: #005b96; /* Medium Ocean Blue */
+    color: #274156; /* Muted Navy */
     margin-bottom: 1rem;
-    text-transform: uppercase;
-    letter-spacing: 3px;
+    border-bottom: 2px solid #4682b4; /* Steel Blue */
+    display: inline-block;
+    padding-bottom: 0.5rem;
+    animation: text-pop-in 1s ease forwards;
+}
+
+@keyframes text-pop-in {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
 }
 
 .about-text p {
-    font-size: 1.25rem;
-    font-family: 'Poppins', sans-serif;
-    color: #03396c; /* Deep Ocean Blue */
-    line-height: 1.8;
-    background: #adcbe3; /* Light Blue */
-    padding: 1.5rem;
-    border-radius: 10px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
-    margin-top: 1.5rem;
-    text-align: left;
+    position: relative;
+    padding: 2rem;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    background-image: url(../../public/stormy_landscape.jpeg);  /* Correct path */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.about-text p::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
 }
 
+/* Subtle animation effect on hover */
 .about-text p:hover {
-    background: #63ace5; /* Soft Ocean Blue */
-    color: #ffffff; /* white text */
-    box-shadow: 0 12px 18px rgba(0, 0, 0, 0.2);
-    transform: translateY(-7px); /* floating effect */
+    transform: translateY(-5px); /* Gentle lift */
+    box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.2), 0 12px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Smooth gradient movement */
+@keyframes move-gradient {
+    0% {
+        transform: translate(0, 0) rotate(45deg);
+    }
+    50% {
+        transform: translate(-20%, -20%) rotate(45deg);
+    }
+    100% {
+        transform: translate(0, 0) rotate(45deg);
+    }
 }
 
 .about-text p span {
@@ -71,45 +120,7 @@ body {
     color: #ffffff; /* white text for emphasis */
 }
 
-/* Skills Section */
-.skills-section h2 {
-    font-size: 2.5rem;
-    color: #ffffff; /* white text */
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    background: linear-gradient(45deg, #005b96, #63ace5); /* gradient with medium ocean blue and soft blue */
-    -webkit-background-clip: text;
-    color: transparent;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* shadow for depth */
-    animation: slide-fade-in 1s ease-in-out forwards;
-    opacity: 0;
-    transform: translateY(20px);
-}
 
-/* Resume Button */
-.resume-button {
-    display: inline-block;
-    margin-top: 1rem;
-    padding: 1rem 2rem;
-    background-color: #63ace5; /* Soft Ocean Blue */
-    color: white;
-    font-size: 1.1rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    text-decoration: none;
-    border-radius: 50px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s ease;
-}
-
-.resume-button:hover {
-    background-color: #005b96; /* Medium Ocean Blue */
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
-    transform: translateY(-2px);
-}
-
-/* About Image */
 .about-image {
     flex: 1;
     max-width: 250px; /* Smaller image size */
@@ -118,17 +129,69 @@ body {
 }
 
 .about-image img {
-    width: 100%; /* Ensure it scales within the parent div */
-    height: 250px; /* Fixed height to make it circular */
-    border-radius: 50%; /* Circular shape */
-    object-fit: cover; /* Ensure image fits inside the circle */
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow for a floating effect */
+    width: 100%;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    perspective: 1000px;
+    transform: rotateX(0deg) rotateY(0deg) translateZ(0);
+    animation: image-3d-initial 1.2s ease forwards;
 }
 
+/* Subtle 3D effect */
 .about-image img:hover {
-    transform: scale(1.05); /* Slight zoom effect on hover */
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+    transform: rotateX(5deg) rotateY(-5deg) translateZ(15px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Animation for image entry */
+@keyframes image-3d-initial {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Resume Button */
+.resume-button {
+    position: relative;
+    z-index: 20;
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #274156; /* Muted Navy */
+    color: #ffffff; /* White */
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 50px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    animation: pop-up 1.5s ease forwards;
+}
+
+@keyframes pop-up {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.resume-button:hover {
+    background-color: #03396c; /* Deep Navy */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
 }
 
 /* Overall Layout */
@@ -164,125 +227,6 @@ h1, h2, h3 {
 }
 
 /* Skills Bar and Progress */
-/* Skills Section */
-.skills-section {
-    flex: 1;
-    max-width: 600px; /* Increased max-width for more focus */
-    margin: 0 auto;
-    text-align: left;
-    background: #005b96; /* Medium Ocean Blue background */
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.3);
-    color: #ffffff; /* White text for contrast */
-}
-
-.skills-section h2 {
-    font-size: 2.5rem;
-    color: #ffffff; /* White text */
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    margin-bottom: 1.5rem;
-    border-bottom: 2px solid #63ace5; /* Soft Ocean Blue underline for contrast */
-    display: inline-block;
-    padding-bottom: 0.5rem;
-    animation: slide-fade-in 1s ease-in-out forwards;
-    opacity: 0;
-    transform: translateY(20px);
-}
 
 /* Skills Grid */
-.skills-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-    gap: 1.5rem;
-}
 
-/* Skill Item */
-.skill-item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
-    font-size: 1rem;
-    font-weight: bold;
-    color: #444;
-    padding: 0.8rem;
-    border: 1px solid #ddd;
-    border-radius: 15px;
-    background-color: #fdfdfd;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    word-wrap: break-word;  /* Prevent long words from overflowing */
-    overflow-wrap: break-word; /* Ensure long words break correctly */
-    max-width: 200px; /* Limit the width of each skill card */
-    text-align: center; /* Center text in the card */
-}
-
-/* Skill Item on Hover */
-.skill-item:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-    border-color: #61dafb;
-}
-
-/* Skill Bar with Progress */
-.skill {
-    margin-bottom: 1.5rem;
-}
-
-.skill span {
-    display: block;
-    font-size: 1.1rem;
-    margin-bottom: 0.5rem;
-    font-weight: bold;
-    color: #fff; /* White text for emphasis */
-}
-
-.skill-bar {
-    width: 100%;
-    height: 10px;
-    background: #ddd;
-    border-radius: 5px;
-    overflow: hidden;
-    position: relative;
-}
-
-.fill {
-    height: 100%;
-    background: linear-gradient(90deg, #63ace5, #005b96); /* Gradient for skill bar */
-    border-radius: 5px;
-    animation: fill-bar 2s ease-in-out;
-}
-
-/* Resume Button (Optional Adjustment) */
-.resume-button {
-    display: inline-block;
-    margin-top: 2rem;
-    padding: 1rem 2rem;
-    background-color: #63ace5; /* Soft Ocean Blue */
-    color: white;
-    font-size: 1.1rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    text-decoration: none;
-    border-radius: 50px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s ease;
-}
-
-.resume-button:hover {
-    background-color: #005b96; /* Medium Ocean Blue */
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
-    transform: translateY(-2px);
-}
-
-@keyframes fill-bar {
-    from {
-        width: 0%;
-    }
-    to {
-        width: var(--width);
-    }
-}

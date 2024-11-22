@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './NavBar.css';
 
 const NavBar = () => {
@@ -11,13 +12,12 @@ const NavBar = () => {
     return (
         <nav className="navbar">
             <div className="navbar-logo">
-                <h1>Donny</h1>
+                <Link to = '/'><h1>Donny</h1></Link>
             </div>
             <div className={`navbar-links ${isMenuOpen ? 'open' : ''}`}>
-                <a href="#about">About</a>
-                <a href="#skills">Skills</a>
-                <a href="#projects">Projects</a>
-                <a href="#contact">Contact</a>
+                <Link to = '/about'> About </Link>
+                <Link to = '/skills'> Skills </Link>
+                <Link to ="/projects"> Projects </Link>
             </div>
             <div className="navbar-toggle" onClick={toggleMenu}>
                 <span className="bar"></span>
