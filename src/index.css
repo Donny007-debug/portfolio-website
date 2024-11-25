@@ -12,7 +12,6 @@ body {
 }
 
 body, html {
-  overflow: hidden; /* Disables scrolling */
   height: 100%; /* Ensure the page takes the full height */
 }
 

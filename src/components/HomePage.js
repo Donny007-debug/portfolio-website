@@ -8,7 +8,7 @@ const HomePage = () => {
         <section className="hero">
             <div className="hero-content">
                 <h1>Hi, I'm Donny</h1>
-                <p>Web Developer | Designer | Creator</p>
+                <p>Web Developer | Recent Graduate | Passionate</p>
                 <Link to="/contact" className="cta-button">Let's Work Together</Link>
             </div>
         </section>

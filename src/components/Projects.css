@@ -1,8 +1,11 @@
 /* Projects.css */
 .projects-section {
     padding: 5rem 2rem;
-    background-color: #fff;
     text-align: center;
+}
+
+.projects-section h2{
+    color: #F2F2F2;
 }
 
 .projects-container {

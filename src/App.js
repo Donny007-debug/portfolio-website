@@ -10,14 +10,16 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 function App() {
   return (      
     <Router>
+      <div className='app-container'>
         <NavBar />   
-      <Routes> 
-        <Route path="/"  element = { <HomePage /> } />
-        <Route path="/contact" element = { <Contact /> } />
-        <Route path="/about" element = { <About /> } />
-        <Route path="/Skills" element = { <Skills /> } />
-        <Route path="/Projects" element = { <Projects /> } />
-      </Routes>
+        <Routes> 
+          <Route path="/"  element = { <HomePage /> } />
+          <Route path="/contact" element = { <Contact /> } />
+          <Route path="/about" element = { <About /> } />
+          <Route path="/Skills" element = { <Skills /> } />
+          <Route path="/Projects" element = { <Projects /> } />
+        </Routes>
+      </div>
     </Router>
   );
 }

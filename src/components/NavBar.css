@@ -4,20 +4,20 @@
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    color: white;
     position: sticky;
-    top: 0;
+    color: white;
     z-index: 1000;
 }
 
 .navbar-logo h1 {
     font-size: 1.5rem;
-    color: #61dafb;
+    color: white;
 }
 
 .navbar-links {
     display: flex;
     gap: 1.5rem;
+    position: relative;
 }
 
 .navbar-links a {

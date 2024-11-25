@@ -4,6 +4,15 @@
   text-align: center;
 }
 
+.app-container {
+  min-height: 100vh; /* Ensures full-height coverage for all pages */
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;

@@ -1,6 +1,5 @@
 .skills-section {
     padding: 5rem 2rem;
-    background-color: #e7eff6;
     text-align: center;
 }
 
@@ -21,10 +20,10 @@
     letter-spacing: 0.5px; /* Minimal spacing for a refined look */
 }
 
-skill-card h3{
+.skill-card h3{
     font-size: 1.2rem;
     font-weight: 700;
-    color: #03396c;
+    color: #F2F2F2;
     text-transform: uppercase;
     letter-spacing: 1.5px;
     position: relative;
