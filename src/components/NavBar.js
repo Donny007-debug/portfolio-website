@@ -18,6 +18,8 @@ const NavBar = () => {
                 <Link to = '/about'> About </Link>
                 <Link to = '/skills'> Skills </Link>
                 <Link to ="/projects"> Projects </Link>
+                <Link to ="/education"> Education </Link>
+                <Link to ="/experience"> Experience </Link>
             </div>
             <div className="navbar-toggle" onClick={toggleMenu}>
                 <span className="bar"></span>

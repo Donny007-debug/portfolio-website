@@ -10,7 +10,7 @@ const About = () => {
                 <div className="about-text">
                     <h1>About Me</h1>
                     <p>
-                        A result-driven and resourceful student with a passion for web development. Proficient in 
+                        A result-driven and resourceful graduate with a passion for web development. Proficient in 
                         designing and building responsive websites, eager to tackle new challenges, continuously 
                         updated with new technologies, and self-motivated to innovate and improve.
                     </p>
