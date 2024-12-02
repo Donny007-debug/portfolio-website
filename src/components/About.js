@@ -26,7 +26,7 @@ const About = () => {
 
                 {/* Profile Image */}
                 <div className="about-image">
-                    <img src="https://Donny007-debug.github.io/portfolio-website/assets/images/ppsizedpic.jpg" alt="Description" />
+                    <img src="images/ppsizedpic.jpg" alt="Description" />
                 </div>
             </div>
         </section>
