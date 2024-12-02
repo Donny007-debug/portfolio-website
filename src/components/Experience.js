@@ -8,7 +8,7 @@ const experienceData = [
     duration: "April 2023 - July 2023",
     },
   {
-    role: "Customer Service Representative",
+    role: "Customer Service Representative Intern",
     company: "Daraz Kaymu Pvt. Ltd.",
     duration: "October 2022 - February 2023",
     },
