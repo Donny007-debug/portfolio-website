@@ -1,6 +1,7 @@
 // Projects.js
 import React from 'react';
-import './Projects.css';
+import './css/Projects.css';
+import IMS from '../media/IMS.mp4';
 
 const Projects = () => {
 
@@ -15,7 +16,7 @@ const Projects = () => {
             <div className="projects-container">
                 <div className="project-card">
                     <video width="100%" height="400" controls>
-                        <source src="/videos/IMS.mp4" type="video/mp4" />
+                        <source src={IMS} type="video/mp4" />
                         Your browser does not support the video tag.
                     </video>
                     <h3>{projectData.title}</h3>

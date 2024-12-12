@@ -1,0 +1,227 @@
+
+/* Section Animations */
+section {
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fade-slide-in 1s ease forwards;
+}
+
+@keyframes fade-slide-in {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* About Section */
+.about-section {
+    position: relative;
+    transform: translateY(-1in);
+    padding: 5rem 2rem;
+    z-index: 1;
+    text-align: center;
+    animation-delay: 0.5s;
+    min-width: 100vh;
+}
+
+.about-container {
+    display: -webkit-flex; /* Safari */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 20 auto;
+    gap: 2rem;
+    padding-bottom: 50px;
+}
+
+.about-text {
+    flex: 1;
+    max-width: 550px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.about-text h1 {
+    font-size: 2.5rem;
+    color: #F2F2F2; /* Muted Navy */
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #4682b4; /* Steel Blue */
+    display: inline-block;
+    padding-bottom: 0.5rem;
+    animation: text-pop-in 1s ease forwards;
+}
+
+@keyframes text-pop-in {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.about-text p {
+    position: relative;
+    padding: 2rem;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.about-text p::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+/* Subtle animation effect on hover */
+.about-text p:hover {
+    transform: translateY(-5px); /* Gentle lift */
+    box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.2), 0 12px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Smooth gradient movement */
+@keyframes move-gradient {
+    0% {
+        transform: translate(0, 0) rotate(45deg);
+    }
+    50% {
+        transform: translate(-20%, -20%) rotate(45deg);
+    }
+    100% {
+        transform: translate(0, 0) rotate(45deg);
+    }
+}
+
+.about-text p span {
+    font-weight: bold;
+    color: #ffffff; /* white text for emphasis */
+}
+
+
+.about-image {
+    flex: 1;
+    max-width: 250px; /* Smaller image size */
+    margin: 1rem auto;
+    text-align: center;
+}
+
+.about-image img {
+    width: 100%;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    perspective: 1000px;
+    transform: rotateX(0deg) rotateY(0deg) translateZ(0);
+    animation: image-3d-initial 1.2s ease forwards;
+}
+
+/* Subtle 3D effect */
+.about-image img:hover {
+    transform: rotateX(5deg) rotateY(-5deg) translateZ(15px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Animation for image entry */
+@keyframes image-3d-initial {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Resume Button */
+.resume-button {
+    -webkit-transform: translateY(20px); /* Safari */
+    position: relative;
+    z-index: 20;
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #274156; /* Muted Navy */
+    color: #ffffff; /* White */
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 50px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    animation: pop-up 1.5s ease forwards;
+}
+
+@keyframes pop-up {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.resume-button:hover {
+    background-color: #03396c; /* Deep Navy */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
+}
+
+/* Overall Layout */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Global Header and Typography */
+h1, h2, h3 {
+    font-weight: bold;
+    color: #005b96; /* Medium Ocean Blue */
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 1rem;
+}
+
+/* Fade-In Animation */
+@keyframes slide-fade-in {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Skills Bar and Progress */
+
+/* Skills Grid */
+

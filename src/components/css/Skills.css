@@ -1,0 +1,52 @@
+.skills-section {
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+.skills-section h2{
+    text-align: center;
+    font-size: 2rem;
+    color: #ffffff; /* Muted Navy */
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #4682b4; /* Steel Blue */
+    padding-bottom: 0.5rem;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.skill-card {
+    font-size: 1.2rem;
+    font-family: 'Playfair Display', serif; /* Elegant serif font */
+    font-weight: 700;
+    color: #03396c; /* Deep blue from your palette */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Subtle shadow for luxury */
+    letter-spacing: 0.5px; /* Minimal spacing for a refined look */
+}
+
+.skill-card h3{
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #F2F2F2;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    position: relative;
+    overflow: hidden;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Icons styling */
+.skill-icon {
+    font-size: 2rem;
+    color: #63ace5;
+    margin-bottom: 1rem;
+}

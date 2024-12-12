@@ -1,13 +1,13 @@
 import React from 'react';
-import HomePage from './components/HomePage';
-import Contact from './components/Contact';
-import NavBar from './components/NavBar'
-import About from './components/About'
-import Skills from './components/Skills'
-import Projects from './components/Projects'
-import Education from './components/Education'
-import Experience from './components/Experience'
-import { HashRouter as Router, Route, Routes } from 'react-router-dom';
+import HomePage from './components/js/HomePage';
+import Contact from './components/js/Contact';
+import NavBar from './components/js/NavBar'
+import About from './components/js/About'
+import Skills from './components/js/Skills'
+import Projects from './components/js/Projects'
+import Education from './components/js/Education'
+import Experience from './components/js/Experience'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 function App() {
   return (      
