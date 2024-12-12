@@ -15,7 +15,7 @@ const Projects = () => {
             <div className="projects-container">
                 <div className="project-card">
                     <video width="100%" height="400" controls>
-                        <source src="/IMS.mp4" type="video/mp4" />
+                        <source src="/videos/IMS.mp4" type="video/mp4" />
                         Your browser does not support the video tag.
                     </video>
                     <h3>{projectData.title}</h3>
