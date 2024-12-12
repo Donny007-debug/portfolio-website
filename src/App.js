@@ -7,7 +7,7 @@ import Skills from './components/js/Skills'
 import Projects from './components/js/Projects'
 import Education from './components/js/Education'
 import Experience from './components/js/Experience'
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 
 function App() {
   return (      
