@@ -5,8 +5,13 @@
     align-items: center;
     padding: 1rem 2rem;
     position: sticky;
+    top: 0;
     color: white;
     z-index: 1000;
+    width: 100%;
+    box-sizing: border-box; /* Include padding in the width calculation */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    white-space: nowrap; /* Prevent content from wrapping inside navbar */
 }
 
 .navbar-logo h1 {
@@ -18,6 +23,10 @@
     display: flex;
     gap: 1.5rem;
     position: relative;
+    justify-content: flex-end; /* Align links to the right */
+    width: 100%; /* Ensure navbar width doesn't exceed viewport */
+    flex-wrap: wrap; /* Allow wrapping of links on small screens */
+    overflow: hidden; /* Prevent any overflow */
 }
 
 .navbar-links a {
@@ -28,42 +37,76 @@
 }
 
 .navbar-links a:hover {
-    color: #61dafb;
+    color: #61dafb; /* React blue for hover effect */
 }
 
 /* Toggle Button for Small Screens */
 .navbar-toggle {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-    gap: 0.3rem;
-}
-
-.navbar-toggle .bar {
-    width: 25px;
-    height: 3px;
-    background-color: white;
-    transition: all 0.3s;
+    display: none; /* Hide the toggle button completely */
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    /* Navbar styling adjustments for mobile */
+    .navbar {
+        padding: 0.8rem 1.5rem; /* Adjust navbar padding */
+        height: 60px; /* Reduced height for mobile */
+        overflow: hidden; /* Ensure no horizontal scrolling */
+    }
+
+    .navbar-logo h1 {
+        font-size: 1.2rem; /* Smaller logo font size on mobile */
+    }
+
     .navbar-links {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 100%;
-        right: 0;
-        background-color: #282c34;
+        display: flex; /* Display navbar links directly on small screens */
+        flex-direction: row; /* Align items horizontally */
+        position: relative;
+        top: 0;
         width: 100%;
-        padding: 1rem 0;
+        padding: 0;
+        gap: 1rem; /* Adjusted gap between links */
+        justify-content: center; /* Center the links horizontally */
+        flex-wrap: wrap; /* Allow links to wrap if space is limited */
     }
 
-    .navbar-links.open {
-        display: flex;
+    .navbar-links a {
+        font-size: 1rem; /* Reduced font size for links */
+        white-space: nowrap; /* Prevent text from wrapping within links */
     }
 
-    .navbar-toggle {
-        display: flex;
+    /* Prevent any overflow in navbar */
+    .navbar {
+        overflow-x: hidden; /* Ensure no horizontal scrolling */
     }
+
+    /* Adjust the padding of sections for mobile */
+    section {
+        padding-top: 80px; /* Adjusted padding for mobile devices */
+    }
+
+    .contact-title,
+    .contact-subtitle,
+    .education-section h2,
+    .experience-section h2,
+    .skills-section h2 {
+        font-size: 1.5rem; /* Adjust heading font size for mobile */
+    }
+
+    .contact-details p,
+    .education-item p,
+    .experience-item p,
+    .skills-item p {
+        font-size: 0.9rem; /* Smaller text size for descriptions */
+    }
+}
+
+/* Prevent body overflow */
+body {
+    overflow-x: hidden; /* Prevent any horizontal scrolling on the page */
+}
+
+/* Add spacing at the top of sections */
+section {
+    padding-top: 80px; /* Adjusted padding for mobile devices */
 }

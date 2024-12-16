@@ -1,7 +1,7 @@
 import React from 'react';
 import '../css/About.css';
 import 'devicon/devicon.min.css';
-import ppsizedpic from '../../media/ppsizedpic.jpg';
+import display_pic from '../../media/display_pic.jpg';
 
 const About = () => {
     return (
@@ -15,7 +15,7 @@ const About = () => {
                         designing and building responsive websites, eager to tackle new challenges, continuously 
                         updated with new technologies, and self-motivated to innovate and improve.
                     </p>
-                    <a className = "resume-button" href={`/resume.pdf`} download="resume.pdf">
+                    <a className = "resume-button" href = '/resume.pdf' download="resume.pdf">
                        Download My Resume
                     </a>
 
@@ -23,7 +23,7 @@ const About = () => {
 
                 {/* Profile Image */}
                 <div className="about-image">
-                    <img src = {ppsizedpic} alt="MyPicture" />
+                    <img src = {display_pic} alt="MyPicture" />
                 </div>
             </div>
         </section>
