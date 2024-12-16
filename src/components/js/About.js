@@ -7,6 +7,10 @@ const About = () => {
     return (
         <section id="about" className="about-section">
             <div className="about-container">
+                {/* Profile Image */}
+                <div className="about-image">
+                    <img src = {display_pic} alt="MyPicture" />
+                </div>
                 {/* About Text */}
                 <div className="about-text">
                     <h1>About Me</h1>
@@ -19,11 +23,6 @@ const About = () => {
                        Download My Resume
                     </a>
 
-                </div>
-
-                {/* Profile Image */}
-                <div className="about-image">
-                    <img src = {display_pic} alt="MyPicture" />
                 </div>
             </div>
         </section>
