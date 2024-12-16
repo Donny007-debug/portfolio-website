@@ -1,10 +1,11 @@
 {
   "files": {
-    "main.css": "/portfolio-website/static/css/main.a1d97d72.css",
-    "main.js": "/portfolio-website/static/js/main.b29bd7ab.js",
+    "main.css": "/portfolio-website/static/css/main.af3358f5.css",
+    "main.js": "/portfolio-website/static/js/main.0449fed2.js",
     "static/js/453.aac68abc.chunk.js": "/portfolio-website/static/js/453.aac68abc.chunk.js",
     "static/media/devicon.svg?iehcku": "/portfolio-website/static/media/devicon.de33ff67547800466a48.svg",
     "static/media/IMS.mp4": "/portfolio-website/static/media/IMS.df524c2091eea3cd46ca.mp4",
+    "static/media/display_pic.jpg": "/portfolio-website/static/media/display_pic.2622ddd388a1c5d724d0.jpg",
     "static/media/devicon.woff?iehcku": "/portfolio-website/static/media/devicon.25bdb9cbf8e5f9b4dde9.woff",
     "static/media/devicon.ttf?iehcku": "/portfolio-website/static/media/devicon.161b6f3376d6ce5c517d.ttf",
     "static/media/fa-solid-900.ttf": "/portfolio-website/static/media/fa-solid-900.ad1782c70927ebc5bc87.ttf",
@@ -13,17 +14,16 @@
     "static/media/fa-solid-900.woff2": "/portfolio-website/static/media/fa-solid-900.83a538a018a9e44b023a.woff2",
     "static/media/fa-brands-400.woff2": "/portfolio-website/static/media/fa-brands-400.fdbb558523a380307689.woff2",
     "static/media/fa-regular-400.ttf": "/portfolio-website/static/media/fa-regular-400.05fdd87be89f7f8f0a1e.ttf",
-    "static/media/ppsizedpic.jpg": "/portfolio-website/static/media/ppsizedpic.10ca3bdfbac6d2f48229.jpg",
     "static/media/fa-regular-400.woff2": "/portfolio-website/static/media/fa-regular-400.4f6a2dabee9c092d09b9.woff2",
     "static/media/fa-v4compatibility.ttf": "/portfolio-website/static/media/fa-v4compatibility.fa86b3c85e77abbd2ebd.ttf",
     "static/media/fa-v4compatibility.woff2": "/portfolio-website/static/media/fa-v4compatibility.c3ea317a0f10f201597f.woff2",
     "index.html": "/portfolio-website/index.html",
-    "main.a1d97d72.css.map": "/portfolio-website/static/css/main.a1d97d72.css.map",
-    "main.b29bd7ab.js.map": "/portfolio-website/static/js/main.b29bd7ab.js.map",
+    "main.af3358f5.css.map": "/portfolio-website/static/css/main.af3358f5.css.map",
+    "main.0449fed2.js.map": "/portfolio-website/static/js/main.0449fed2.js.map",
     "453.aac68abc.chunk.js.map": "/portfolio-website/static/js/453.aac68abc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a1d97d72.css",
-    "static/js/main.b29bd7ab.js"
+    "static/css/main.af3358f5.css",
+    "static/js/main.0449fed2.js"
   ]
 }
