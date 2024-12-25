@@ -19,9 +19,10 @@ const About = () => {
                         designing and building responsive websites, eager to tackle new challenges, continuously 
                         updated with new technologies, and self-motivated to innovate and improve.
                     </p>
-                    <a className = "resume-button" href = '/resume.pdf' download="resume.pdf">
-                       Download My Resume
+                    <a className="resume-button" href={`${process.env.PUBLIC_URL}/resume.pdf`} download="resume.pdf">
+                        Download My Resume
                     </a>
+
 
                 </div>
             </div>
