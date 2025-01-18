@@ -12,6 +12,11 @@ const experienceData = [
     company: "Daraz Kaymu Pvt. Ltd.",
     duration: "October 2022 - February 2023",
     },
+    {
+      role: "Digital Marketing Officer",
+      company: "Saket Textile Industries Pvt. Ltd.",
+      duration: "December 2024 - Currently Ongoing",
+      },
   // Add more experience items here
 ];
 
