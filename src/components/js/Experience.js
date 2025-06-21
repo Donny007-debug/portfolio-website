@@ -15,7 +15,7 @@ const experienceData = [
     {
       role: "Digital Marketing Officer",
       company: "Saket Textile Industries Pvt. Ltd.",
-      duration: "December 2024 - Currently Ongoing",
+      duration: "December 2024 - April 2025",
       },
   // Add more experience items here
 ];
