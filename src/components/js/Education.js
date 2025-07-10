@@ -1,7 +1,11 @@
-import React from 'react';
 import '../css/Education.css';
 
 const educationData = [
+  {
+    degree: "Master's in Information Technology Management",
+    institution: "Webster University",
+    duration: "2025 - Present",
+    },
   {
     degree: "Bachelor's in Information Management",
     institution: "Shanker Dev Campus - Putalisadak",
@@ -17,7 +21,6 @@ const educationData = [
     institution: "Annapurna Secondary School",
     duration: "2004 - 2016",
     }
-  // Add more education items here
 ];
 
 const Education = () => {
