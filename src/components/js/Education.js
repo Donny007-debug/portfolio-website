@@ -3,22 +3,22 @@ import '../css/Education.css';
 const educationData = [
   {
     degree: "Master's in Information Technology Management",
-    institution: "Webster University",
+    institution: "Webster University - Missouri, United States of America",
     duration: "2025 - Present",
     },
   {
     degree: "Bachelor's in Information Management",
-    institution: "Shanker Dev Campus - Putalisadak",
+    institution: "Shanker Dev Campus - Kathmandu, Nepal",
     duration: "2018 - 2023",
     },
   {
     degree: "High School",
-    institution: "National Integrated College - Dillibazaar",
+    institution: "National Integrated College - Kathmandu, Nepal",
     duration: "2016 - 2018",
     }, 
   {
     degree: "School Leaving Certificate",
-    institution: "Annapurna Secondary School",
+    institution: "Annapurna Secondary School - Kathmandu, Nepal",
     duration: "2004 - 2016",
     }
 ];
